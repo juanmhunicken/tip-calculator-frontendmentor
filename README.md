@@ -1,5 +1,11 @@
 # Frontend Mentor - Tip calculator app
 
+First Frontend Mentor challenge I've taken. Learning SCSS - practicing HTML, CSS, Javascript. 
+
+Difficulty level: 2 - Junior.
+
+# 
+
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
