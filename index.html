@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="/style/style.css">
+
+
+  <!-- SCRIPT -->
+  <script src="js/main.js"></script>
+
+</head>
+<body>
+  <!-- Logo -->
+  <div class="logo-container">
+  <img src="/images/logo.svg" alt="Splitter logo" class="logo">
+  </div>
+
+  <div class="container full-app">
+    <div class="bill">
+      <h2>Bill</h2>
+      <input type="number" id="billAmount" placeholder="0">
+    </div>
+
+    <!--Tip Selector-->
+    <div class="tip-selector">
+    <h2>Select Tip %</h2>
+    <button onclick="main(0.05)">5%</button>
+    <button onclick="main(0.1)">10%</button>
+    <button onclick="main(0.15)">15%</button>
+    <button onclick="main(0.25)">25%</button>
+    <button onclick="main(0.5)">50%</button>
+    <button id="tipCustom" onclick="toggleCustomTip()">Custom</button>
+    <input type="number" id="customTip" placeholder="0">
+  </div> <!-- End tip-selector-->
+  
+  <div class="people">
+    <h2>Number of People</h2>
+    <input type="number" id="numPeople" placeholder="0">
+  </div> <!-- End people-->
+
+  <div class="results">
+    <div class="resultTag">
+      Tip Amount
+    </div>
+    <div class="resultContainer" id="tipResult">$0.00</div>
+    
+    <div class="resultTag">
+      Total
+    </div>
+    <div class="resultContainer" id="totalResult">$0.00</div>
+    <button class="reset" onclick="reset()">
+      RESET
+    </button>
+  </div> <!-- End results-->
+
+</div> <!-- End full-app container-->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/juanmhunicken">Juan Martin Hunicken</a>.
+  </div> 
+</body>
+
+
+</html>
